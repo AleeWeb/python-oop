@@ -30,4 +30,18 @@ ride() - have it display "Riding" on the screen and increase the total miles rid
 reverse() - have it display "Reversing" on the screen and decrease the total miles ridden by 5...
 '''
 
+def displayInfo(self):
+		print self.price, self.max_speed, self.miles
+		return self
+
+displayInfo()
+
+#def ride():
+
+#def reverse():
+
+#chain methods eventually
 redBike.displayInfo().ride().reverse()
+
+
+
