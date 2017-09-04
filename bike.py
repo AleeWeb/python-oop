@@ -31,8 +31,8 @@ reverse() - have it display "Reversing" on the screen and decrease the total mil
 '''
 
 def displayInfo(self):
-		print self.price, self.max_speed, self.miles
-		return self
+    print self.price, self.max_speed, self.miles
+    return self
 
 displayInfo()
 
