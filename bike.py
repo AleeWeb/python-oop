@@ -41,10 +41,10 @@ def ride(self):
     print "Riding", self.miles
     return self
 
-	def reverse(self): 
-        self.miles -= 5
-        print "Reversing", self.miles
-        return self
+def reverse(self): 
+    self.miles -= 5
+    print "Reversing", self.miles
+    return self
 
 redBike = Bike(200, "25mph")
 redBike.displayInfo().ride().reverse()
