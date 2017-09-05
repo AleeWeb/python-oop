@@ -31,17 +31,31 @@ reverse() - have it display "Reversing" on the screen and decrease the total mil
 '''
 
 def displayInfo(self):
-		print self.price, self.max_speed, self.miles
-		return self
+    print self.price, self.max_speed, self.miles
+    return self
 
 displayInfo()
 
-#def ride():
+def ride(self):
+    self.miles += 10
+    print "Riding", self.miles
+    return self
 
-#def reverse():
+	def reverse(self): 
+        self.miles -= 5
+        print "Reversing", self.miles
+        return self
 
-#chain methods eventually
+redBike = Bike(200, "25mph")
 redBike.displayInfo().ride().reverse()
+
+blueBike = Bike(300, "15mph").ride().ride().reverse().reverse().displayInfo()
+
+spaceBike = Bike(1000, "30mph").reverse().reverse().reverse().displayInfo()
+
+
+
+
 
 
 
